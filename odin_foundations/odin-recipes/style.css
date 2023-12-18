@@ -1,0 +1,17 @@
+/* color, bg, fonts, & img height and width */
+
+body {
+    color: rgb(148, 217, 64);
+    background-color: rgb(30, 70, 86);
+    font-family:'Courier New', Courier, monospace;
+}
+
+img {
+    height: auto;
+    width: 30%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(197, 217, 64);
+}
