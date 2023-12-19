@@ -1,17 +1,81 @@
 /* color, bg, fonts, & img height and width */
 
+* {
+   margin: 0;
+
+  }
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
 body {
-    color: rgb(148, 217, 64);
-    background-color: rgb(30, 70, 86);
+    color: rgb(114, 195, 16);
+    background-color: rgb(1, 25, 35);
     font-family:'Courier New', Courier, monospace;
+    font-weight: lighter;
+    padding: 1rem;
+}
+
+header {
+    padding: 1rem;
+}
+
+
+dl {
+    background-color: rgb(1, 18, 25);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+ul {
+    list-style:circle;
+}
+ul,ol{
+    margin: 1rem;
+}
+dt {
+    background-color: rgb(1, 11, 15);
+    margin: 1rem;
+}
+
+dd{
+    margin: 1rem;
+}
+main {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+h1, h2, h3, h4 {
+    text-align: center;
+    display: block;
 }
 
 img {
     height: auto;
-    width: 30%;
+    min-width: 180px;
+    width: 25%;
+    max-width: 350px;
+    box-shadow: 0px 0px .5rem black;
+    border-radius: 1rem;
+}
+
+li {
+    width: 100%;
 }
 
 a {
+    line-height: 2rem;
     text-decoration: none;
-    color: rgb(197, 217, 64);
+    color: rgb(222, 255, 7);
+    line-height: 2rem;
+}
+
+li > a {
+    color: antiquewhite;
 }
