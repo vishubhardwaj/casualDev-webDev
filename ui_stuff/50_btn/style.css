@@ -103,7 +103,9 @@ section{
     gap: 1rem;
 }
 
+
 .grp{
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -114,6 +116,7 @@ section{
 
 .grp:nth-of-type(2n){
     background-color: rgb(197, 156, 238);
+
 }
 
 .btn{
