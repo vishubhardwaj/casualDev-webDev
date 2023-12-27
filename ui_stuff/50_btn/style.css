@@ -99,16 +99,52 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 1rem;
 }
 
+.grp-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.grp-btn:nth-of-type(2n){
+    background-color: rgb(190, 149, 231);
+}
+
+.btn{
+    min-width: 70px;
+    min-height: 30px;
+    border: none;
+    background-color: white;
+    color: black;
+}
 @media screen and (max-width: 700px) {
-    btn{
+    .grp-btn{
         padding: .5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         gap: .5rem;
-        overflow: scroll;
+        overflow-x: scroll;
     }
+}
+
+#btn-1a{
+    background-color: blue;
+    width: 100px;
+    height: 50px;
+    border-radius: .5rem;
+    color: white;
+    font-size: 100%;
+    transition: background-color .2s ease-in-out;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+}
+#btn-1a:hover{
+    background-color: rgb(46, 46, 241);
+}
+#btn-1a:active{
+    background-color: black;
+    box-shadow: none;
 }
