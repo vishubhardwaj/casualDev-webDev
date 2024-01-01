@@ -26,6 +26,10 @@ header {
 
 
 dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(1, 18, 25);
     padding: 1rem;
     border-radius: 1rem;
@@ -47,6 +51,8 @@ dd{
 }
 main {
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     flex-direction: column;
     margin: 0 2rem;
